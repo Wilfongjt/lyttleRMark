@@ -2,8 +2,8 @@ options(digits=3)
 options(scipen = 999)
 #install.packages("RMark")
 library(RMark)
-# MSUR <- read.table("/Users/alanleach/Desktop/Brant_study/Mate_S/mate_phi_inp.txt", header=TRUE, colClasses = 'character',fill = TRUE)
-MSUR <- read.table("./kitematic/lyttleR/code/data/sample.txt", header=TRUE, colClasses = 'character',fill = TRUE)
+
+MSUR <- read.table("./kitematic/sample/data/sample.txt", header=TRUE, colClasses = 'character',fill = TRUE)
 for (i in 3:ncol(MSUR)){
   MSUR[,i] <- as.numeric((MSUR[,i]))
 }
