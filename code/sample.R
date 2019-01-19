@@ -3,7 +3,9 @@ options(scipen = 999)
 #install.packages("RMark")
 library(RMark)
 
-MSUR <- read.table("/Users/alanleach/Documents/Github/mate_survival/lyttleRMark/code/data/sample.txt", header=TRUE, colClasses = 'character',fill = TRUE)
+#MSUR <- read.table("/Users/alanleach/Documents/Github/mate_survival/lyttleRMark/code/data/sample.txt", header=TRUE, colClasses = 'character',fill = TRUE)
+MSUR <- read.table("kitematic/sample/data/sample.txt", header=TRUE, colClasses = 'character',fill = TRUE)
+
 for (i in 3:ncol(MSUR)){
   MSUR[,i] <- as.numeric((MSUR[,i]))
 }
