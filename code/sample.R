@@ -59,15 +59,15 @@ do.RDBarkHug=function()
   F.dot=list(formula=~1)
   #F.G=list(formula=~1+sex)
   
-  p.dot=list(formula=~ 1+session+time)
+  p.dot=list(formula=~ 1)
   #p.T=list(formula=~ 1+session+time)
   
   c.dot = list(formula=~1)
   #c.s = list(formula=~1+session)
   
   cml=create.model.list("RDBarkHug")
-  return(mark.wrapper(cml,data=MSUR.data,ddl=MSUR.ddl))
+  system.time(return(mark.wrapper(cml,data=MSUR.data,ddl=MSUR.ddl)))
   
 }
 MSUR.results=do.RDBarkHug()
-##AGL change
+##AGL changed p.dot parameter
