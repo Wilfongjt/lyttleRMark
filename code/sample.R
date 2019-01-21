@@ -72,4 +72,4 @@ do.RDBarkHug=function()
   
 }
 MSUR.results=do.RDBarkHug()
-##AGL changed p.dot parameter
+d##AGL changed p.dot parameter
